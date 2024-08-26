@@ -1,0 +1,158 @@
+.carousel {
+  position: relative;
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 40%;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-controls button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-indicators button {
+  width: 100px;
+  height: 2px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, .4);
+  cursor: pointer;
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 5px;
+}
+.carousel-indicators button.active::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 0;
+    background-color: #fff;
+    animation: loading 3s ;
+}
+
+@keyframes loading{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 100px;
+    }
+}
+
+.bg-color-01{
+  background: navy;
+  width: 500px;
+  height: 250px;
+}
+.bg-color-02{
+  background: black;
+  width: 500px;
+  height: 250px;
+}
+.bg-color-03{
+  background: cornflowerblue;
+  width: 500px;
+  height: 250px;
+}
+.bg-color-04{
+  background: indigo;
+  width: 500px;
+  height: 250px;
+}
+.con-1{
+  background-color: white;
+  color: #0D113E;
+  border-radius: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+.re{
+  font-size: 12px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.line-re {
+  border: 1px solid black;
+  background-color: black;
+  width: 85%;
+  height: 1px;
+  margin: 4% auto;
+}
+
+.re-name{
+  font-size: 13px;
+  text-align: left;
+}
+
+.re-po{
+  font-size: 10px;
+}
+
+.profile-img{
+  margin:-13% auto auto auto;
+  outline: 10px solid rgb(255, 255, 255); /* Set the color and width of the outline */
+  border-radius: 50px;
+}
+
+.footer-con{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  
+
+}
+
+.reviewStar{
+  display: flex;
+}
